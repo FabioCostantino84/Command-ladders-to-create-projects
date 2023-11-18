@@ -2,8 +2,7 @@
 # Project creation with Vite + Vue, Bootstrap, Sass, Axios.
 
 
-## Crea il template di un progetto all'interno della cartella un cui ci troviamo se usiamo il ".", 
-## Create the template of a project inside the folder we are in if we use the ".",
+## Crea il template di un progetto all'interno della cartella un cui ci troviamo se usiamo il ".", - Create the template of a project inside the folder we are in if we use the ".",
 ```bash
 npm create vite@latest . -- --template vue
 ```
@@ -112,7 +111,7 @@ export default {
 data() {
 
         return {
-            baseurl: 'http://127.0.0.1:8000/', // URL BASE DI laravel_api
+            baseurl: 'http://127.0.0.1:8000/',
             portfolioApi: 'api/projects',
             projects: [],
         }
@@ -125,7 +124,8 @@ data() {
 ## Add the Axios call on the 'mounted' of the app
 ```js
 mounted() {
-        // CHIAMATA AXIOS QUANDO App E' MOUNTED
+        // Chiamata Axios quando 'App' è 'mounted'
+        // Calling Axios when 'App' is 'mounted'
         axios.get(this.baseurl + this.portfolioApi)
             .then(response => {
                 console.log(response);

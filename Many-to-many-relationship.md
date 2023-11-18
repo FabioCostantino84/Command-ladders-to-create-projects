@@ -25,7 +25,7 @@ php artisan migrate
 ```bash
 php artisan make:migration create_course_student_table
 ```
-### Modificare la migrazione appena per definire la struttura della tabella Pivot - Modify the migration just to define the structure of the PivotTable
+### Modificare la migrazione per definire la struttura della tabella Pivot - Modify the migration to define the structure of the PivotTable
 
 ```php
 // Migrazione Tabella Pivot - PivotTable Migration
